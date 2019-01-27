@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.navbar-header .navbar-brand {
+nav .navbar-brand {
   font-size: 1.5em;
   color: #01FF70;
 }
@@ -108,7 +108,9 @@ body p {
 }
 
 footer .container .social li {
-  padding: 0 2em;
+  float: left;
+  text-transform: uppercase;
+  padding: 0 1em;
 }
 
 .entry {
@@ -148,7 +150,7 @@ footer .container .social li {
 
 @media (min-width: 767px) {
   #main {
-    margin-top: 200px;
+    margin-top: 50px;
   }
 }
 
@@ -168,7 +170,6 @@ footer .container .social li {
 }
 
 
-
 body {
   position: relative;
   font-family: 'PT Mono';
@@ -179,15 +180,8 @@ body {
   /*Section Fix*/
   /*Container Prefix*/
 }
-body {
-  font-family: 'PT Mono';
-}
 footer .container {
   text-align: center;
-}
-footer .container .logo {
-  display: inline-block;
-  margin-bottom: 65px;
 }
 footer .container .social {
   list-style: none;
@@ -196,95 +190,4 @@ footer .container .social {
   margin-bottom: 85px;
   padding: 0;
   text-align: center;
-}
-footer .container .social li {
-  float: left;
-  padding: 0 55px;
-  text-transform: uppercase;
-}
-
-.navigation_bar {
-  background: rgba(255, 255, 255, 0.50);
-  margin: 0;
-  height: 96px;
-  position: fixed;
-  transition: all 300ms ease-in-out 0s;
-  width: 100%;
-}
-.navigation_bar * {
-  transition: all 300ms ease-in-out 0s;
-}
-.navigation_bar .navbar-header {
-  z-index: 1000;
-}
-.navigation_bar .navbar-header .navbar-brand {
-  height: 136px;
-  padding: 1em 0.5em;
-  // line-height: 2em;
-}
-.navigation_bar #main_menu .navbar-nav {
-  padding-top: 1em;
-}
-.navigation_bar #main_menu .navbar-nav li {
-  padding: 15px 35px;
-}
-.navigation_bar #main_menu .navbar-nav li a {
-  line-height: 1;
-  padding: 0;
-  font-size: 24px;
-  color: #271818;
-  text-transform: lowercase;
-}
-
-.navigation_bar.scrolled #main_menu .navbar-nav li {
-  padding: 15px 35px;
-}
-
-@media (max-width: 767px) {
-  .navigation_bar {
-    position: relative;
-    height: 116px;
-  }
-  .navigation_bar .navbar-header .navbar-brand {
-    height: 116px;
-    padding: 25px 15px;
-  }
-  .navigation_bar .navbar-header .navbar-toggle {
-    border-radius: 0;
-    background: #0074D9;
-    border: none;
-    width: 52px;
-    height: 42px;
-    margin-top: 32px;
-  }
-  .navigation_bar .navbar-header .navbar-toggle span {
-    background: #fff;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .navigation_bar .navbar-header .navbar-toggle[aria-expanded="true"] {
-    background: #271818;
-  }
-  .navigation_bar #main_menu {
-    background: #271818;
-    overflow: hidden;
-  }
-  .navigation_bar #main_menu[aria-expanded="true"] {
-    background: #0074D9;
-  }
-  .navigation_bar #main_menu .navbar-nav {
-    padding: 15px 0 25px;
-    margin: 0 -15px;
-  }
-  .navigation_bar #main_menu .navbar-nav li {
-    padding: 5px 30px;
-  }
-  .navigation_bar #main_menu .navbar-nav li a:before {
-    float: left;
-    position: relative;
-    width: 1px;
-    height: 0;
-    top: 12px;
-    left: 0;
-  }
 }

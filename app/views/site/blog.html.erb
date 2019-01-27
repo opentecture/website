@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div style="border-bottom: 1px solid #E5E5E5;">
+        Archives
+      </div>
+
+    </div>
+
+    <hr>
+  </div>
+
+  <% (1..36).to_a.in_groups_of(6) do |group| %>
+  <div class="row">
+    <% group.each do |thumb| %>
+    <div class="col-md-2">
+      <div class="" style="font-size: 14px; line-height: 1em;">
+        <%= render file: "components/archive_thumb" %>
+        <p>
+          <a href="/blog/title">
+            Some Words
+          </a>
+
+          <br>
+
+          <span style="font-size: 11px; color: #E5E5E5;">
+            <%= time_ago_in_words(Time.now - rand(30).days) %> ago
+          </span>
+        </p>
+      </div>
+    </div>
+    <% end %>
+  </div>
+  <% end %>
+</div>

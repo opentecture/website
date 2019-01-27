@@ -1,0 +1,9 @@
+{
+  "name": "opentecture",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^4.29.0",
+    "webpack-dev-server": "^3.1.14"
+  }
+}

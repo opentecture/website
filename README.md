@@ -1,24 +1,22 @@
-# README
+# Opentecture
 
-This README would normally document whatever steps are necessary to get the
+This repo is for the Opentecture website,
+hosted at https://www.opentecture.com.
+
+---
+
+This README covers the steps necessary to get the
 application up and running.
 
-Things you may want to cover:
+Assuming OSX Mojave:
 
-* Ruby version
+* install Ruby 2.5x(using RVM or another method)
+* `gem install bundler` to install the Bundler library
+* `git clone URL` Clone the repo
+* `bundle install` to install the dependencies
+* `rake db:create` - although no database is used currently
+* `rails s` to start the server at http://localhost:3000
 
-* System dependencies
+## Contributing
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Contribute by [creating an Issue](https://github.com/opentecture/website/issues/new). And, fork this repository and create a Pull Request (ideally related to an Issue).

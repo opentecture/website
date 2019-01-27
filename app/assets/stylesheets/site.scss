@@ -1,12 +1,18 @@
-// Place all the styles related to the site controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-nav .navbar-brand {
-  font-size: 1.5em;
-  color: #01FF70;
+body {
+  position: relative;
+  font-family: 'PT Mono';
+  font-size: 18px;
+  color: #8d8989;
+  p {
+    line-height: 2em;
+  }
 }
-
+nav {
+  .navbar-brand {
+    font-size: 1.5em;
+    color: #01FF70;
+  }
+}
 // Community Page
 .row {
   h1 {
@@ -19,8 +25,7 @@ nav .navbar-brand {
     padding: 0.25em 0.5em;
   }
 }
-
-#main_menu .navbar-nav.navbar-right {
+.navbar-nav {
   li {
     list-style-type: none;
     padding: 0 1em;
@@ -35,7 +40,6 @@ nav .navbar-brand {
     background: #7FDBFF;
   }
 }
-
 .parts-list .col-md-4 {
   border-top: 1px solid #DDDDDD;
   height: 280px;
@@ -49,7 +53,6 @@ nav .navbar-brand {
     background-color: #DDDDDD;
   }
 }
-
 ul.parts-list {
   list-style-type: none;
   clear: both;
@@ -61,26 +64,13 @@ ul.parts-list {
     width: 30%;
   }
 }
-
 nav.navbar {
   background: rgba(255, 255, 255, 0.9);
-}
-
-.type_texts {
-  .inner_box {
-    background-color: #F4F4F4;
-    padding: 3em;
-  }
-}
-
-body p {
-  line-height: 2em;
 }
 
 .inner_box2 {
   padding: 60px;
   background: #f8f8f8;
-
   h3 {
     text-transform: uppercase;
     color: #271818;
@@ -97,7 +87,6 @@ body p {
       margin-top: 15px;
     }
   }
-
   li {
     text-transform: uppercase;
   }
@@ -106,32 +95,22 @@ body p {
 .social {
   list-style-type: none;
 }
-
 footer .container .social li {
   float: left;
   text-transform: uppercase;
   padding: 0 1em;
 }
-
 .entry {
   border-bottom: 1px solid #DDD;
   margin-bottom: 2em;
   padding: 2em 0;
 }
-
 .row h3 {
   color: #0074D9;
 }
-
-.social_network_inner h3,
 .inner_box2 h3 {
   color: black;
 }
-
-.clear {
-  clear: both;
-}
-
 .section_title h2 {
   text-align: left;
   text-transform: uppercase;
@@ -141,19 +120,16 @@ footer .container .social li {
   margin-top: 0;
   display: inline-block;
 }
-
 @media (max-width: 450px) {
   .section_title h2 {
     font-size: 36px;
   }
 }
-
 @media (min-width: 767px) {
   #main {
     margin-top: 50px;
   }
 }
-
 @media (max-width: 899px) {
   .open-standards,
   .community,
@@ -167,18 +143,9 @@ footer .container .social li {
   .living-spaces {
     padding: 100px;
   }
-}
-
-
-body {
-  position: relative;
-  font-family: 'PT Mono';
-  font-size: 18px;
-  color: #8d8989;
-  /*Global Font*/
-  /*Floating*/
-  /*Section Fix*/
-  /*Container Prefix*/
+  .nav-item {
+    margin-left: 1em;
+  }
 }
 footer .container {
   text-align: center;
